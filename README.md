@@ -8,15 +8,30 @@ Models 			| MovieLens HR@10 | MovieLens NDCG@10 | Pinterest HR@10 | Pinterest ND
 ------ 			| --------------- | ----------------- | --------------- | -----------------
 pytorch-BPR    	| 0.700 		  | 0.418             | 0.877 			| 0.551
 
+## Install
 
-## The requirements are as follows:
-	* python==3.6
-	* pandas==0.24.2
-	* numpy==1.16.2
-	* pytorch==1.0.1
-	* tensorboardX==1.6 (mainly useful when you want to visulize the loss, see https://github.com/lanpa/tensorboard-pytorch)
-
-## Example to run:
+```bash
+make install
 ```
+
+The key requirements installed through conda include:
+
+```yaml
+- python>=3.8
+- pandas>=1.1
+- numpy>=1.19
+- pytorch>=1.6
+- tensorboardX>=2.1 (mainly useful when you want to visulize the loss, see https://github.com/lanpa/tensorboard-pytorch)
+```
+
+## Uninstall
+
+```bash
+make uninstall
+```
+
+## Example to run
+
+```bash
 python main.py --factor_num=16 --lamda=0.001
 ```

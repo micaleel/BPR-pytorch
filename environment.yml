@@ -1,0 +1,14 @@
+name: torch-bpr
+channels:
+    - anaconda
+    - defaults
+    - pytorch
+dependencies:
+    - numpy
+    - pandas
+    - pip
+    - python=3.8
+    - pytorch
+    - scipy
+    - pip:
+        - tensorboardx
