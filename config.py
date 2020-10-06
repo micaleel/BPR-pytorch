@@ -8,7 +8,7 @@ dataset = "ml-1m"
 assert dataset in ["ml-1m", "pinterest-20"]
 
 # paths
-main_path = os.path.join(os.path.dirname(__file__), "data")
+main_path = os.path.join(os.path.dirname(__file__), "data/")
 os.makedirs(main_path, exist_ok=True)
 
 train_rating = main_path + "{}.train.rating".format(dataset)

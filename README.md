@@ -33,5 +33,5 @@ make uninstall
 ## Example to run
 
 ```bash
-python main.py --factor_num=16 --lamda=0.001
+python main.py --factor_num=16 --reg=0.001
 ```
